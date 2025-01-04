@@ -28,7 +28,7 @@ const SeriesVideoPlayer = ({ tmdbId, season, episode, onClose }) => {
             <X className="h-6 w-6" />
           </button>
         </div>
-        <div className="relative mt-16 pt-[56.25%] sm:mt-0">
+        <div className="relative mt-0 pt-[100%] md:pt-[66.25%] sm:mt-0">
           <iframe
             src={sources[selectedSource]}
             className="absolute inset-0 h-full w-full rounded-lg"

@@ -11,8 +11,8 @@ function VideoPlayer({ tmdbId, onClose }) {
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 px-4 md:px-0">
-      <div className="relative w-full max-w-5xl">
-        <div className="absolute -top-14 flex w-full flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+      <div className="relative w-full max-w-5xl ">
+        <div className="absolute -top-14 flex w-full flex-col gap-2 sm:flex-row sm:items-center sm:justify-between ">
           <select
             value={selectedSource}
             onChange={(e) => setSelectedSource(e.target.value)}
@@ -28,7 +28,7 @@ function VideoPlayer({ tmdbId, onClose }) {
             <X className="h-6 w-6" />
           </button>
         </div>
-        <div className="relative mt-16 pt-[56.25%] sm:mt-0">
+        <div className="relative mt-0 pt-[100%] md:pt-[66.25%] sm:mt-0">
           <iframe
             src={sources[selectedSource]}
             className="absolute inset-0 h-full w-full rounded-lg"
