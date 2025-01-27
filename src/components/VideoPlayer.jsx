@@ -16,7 +16,7 @@ function VideoPlayer({ tmdbId, onClose }) {
           <select
             value={selectedSource}
             onChange={(e) => setSelectedSource(e.target.value)}
-            className="w-full rounded bg-gray-800 px-3 py-1 text-white sm:w-auto"
+            className="w-full rounded-sm bg-gray-800 px-3 py-1 text-white sm:w-auto"
           >
             <option value="rivestream">Source 1</option>
             <option value="rgshows">Source 2</option>

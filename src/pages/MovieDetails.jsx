@@ -30,7 +30,7 @@ function MovieDetails() {
           alt={movie.title}
           className="h-full w-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-t from-black to-transparent" />
       </div>
 
       <div className="relative -mt-40 px-4 pb-12">

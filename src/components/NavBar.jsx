@@ -28,7 +28,7 @@ function NavBar() {
               placeholder='Search movies...'
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className='w-64 rounded-full bg-gray-800 px-4 py-2 pl-10 text-sm text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-white/20'
+              className='w-64 rounded-full bg-gray-800 px-4 py-2 pl-10 text-sm text-white placeholder-gray-400 focus:outline-hidden focus:ring-2 focus:ring-white/20'
             />
             <Search className='absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-gray-400' />
           </div>

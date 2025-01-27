@@ -6,13 +6,13 @@ function MovieCard({movie}) {
   return (
     <Link to={`/movie/${movie.id}`} className='block'>
       <div className='group relative'>
-        <div className='aspect-[2/3] overflow-hidden rounded-lg'>
+        <div className='aspect-2/3 overflow-hidden rounded-lg'>
           <img
             src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
             alt={movie.title}
             className='h-full w-full object-cover transition-transform duration-300 group-hover:scale-110'
           />
-          <div className='absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100'>
+          <div className='absolute inset-0 bg-linear-to-t from-black/80 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100'>
             <div className='absolute bottom-0 p-4'>
               <h3 className='text-lg font-semibold text-white'>{movie.original_title}</h3>
               <div className='mt-2 flex items-center gap-2'>

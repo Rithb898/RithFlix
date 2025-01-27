@@ -56,7 +56,7 @@ function SeriesDetails() {
           alt={series.name}
           className='h-full w-full object-cover'
         />
-        <div className='absolute inset-0 bg-gradient-to-t from-black to-transparent' />
+        <div className='absolute inset-0 bg-linear-to-t from-black to-transparent' />
       </div>
 
       <div className='relative -mt-40 px-4 pb-12'>
@@ -102,7 +102,7 @@ function SeriesDetails() {
                     key={episode.id}
                     className='bg-white/5 rounded-lg overflow-hidden hover:bg-white/10 transition-colors'
                   >
-                    <div className='grid grid-cols-1 md:grid-cols-[200px,1fr] gap-4'>
+                    <div className='grid grid-cols-1 md:grid-cols-[200px_1fr] gap-4'>
                       <div className='aspect-video relative'>
                         <img
                           src={

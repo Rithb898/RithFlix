@@ -10,13 +10,13 @@ const SeriesVideoPlayer = ({ tmdbId, season, episode, onClose }) => {
   };
 
   return (
-    <div className="fixed inset-0 z-[60] flex items-center justify-center bg-black/80 px-4 md:px-0">
+    <div className="fixed inset-0 z-60 flex items-center justify-center bg-black/80 px-4 md:px-0">
       <div className="relative w-full max-w-5xl">
         <div className="absolute -top-14 flex w-full flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
           <select
             value={selectedSource}
             onChange={(e) => setSelectedSource(e.target.value)}
-            className="w-full rounded bg-gray-800 px-3 py-1 text-white sm:w-auto"
+            className="w-full rounded-sm bg-gray-800 px-3 py-1 text-white sm:w-auto"
           >
             <option value="rivestream">Source 1</option>
             <option value="rgshows">Source 2</option>
